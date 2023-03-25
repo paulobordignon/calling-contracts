@@ -20,10 +20,21 @@ For this, you need to call a contract that will call that another contract.
 msg.sender is the account that directly calls the function (in this case my contract address). tx.orgin is the address that first initiated the transaction (my wallet address).
 
 I implemented the contract and deployed:
-`` npx hardhat run scripts/deploy.js --network goerli ``
+
+`npx hardhat run scripts/deploy.js --network goerli`
 
 The Winner event:
 https://goerli.etherscan.io/tx/0x529ae5d35b51838f3165293ca93f727d81f5ed0725ba5562eb6135be9beef98f
 
 The contract:
 0xB3Bf5F9b1897Fe584831d1f708cB9d4ca5CBC354
+
+---
+
+How I create this project?
+
+1 - Run `npm init -y`
+
+2 - Run `npm install --save-dev hardhat`
+
+3 - Run `npx hardhat`
